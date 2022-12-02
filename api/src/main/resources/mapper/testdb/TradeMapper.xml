@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.dao.TradeHistoryMapper">
+    <select id="getTradeHistory" parameterType="String" resultType="org.example.dto.TradeRecord">
+        SELECT username, order_id as orderId FROM trade WHERE username = #{username}
+    </select>
+</mapper>

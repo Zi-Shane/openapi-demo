@@ -1,7 +1,7 @@
 package org.example.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.example.dao.SimpleKeyPair;
+import org.example.entity.SimpleKeyPair;
 import org.example.util.RedisUtil;
 import org.springframework.web.bind.annotation.*;
 

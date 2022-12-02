@@ -19,6 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- dependencies version -->
         <lombok.version>1.18.24</lombok.version>
+        <mybatis.version>3.0.0</mybatis.version>
     </properties>
 
     <!-- Autoconfiguration, don't need to define versions of the spring dependencies -->
@@ -50,6 +51,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.5.1</version>
         </dependency>
 
         <!-- Lombok -->

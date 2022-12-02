@@ -1,4 +1,24 @@
 spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:postgresql://127.0.0.1:54322/test
+      username: 123
+      password: 123
+      driver-class-name: org.postgresql.Driver
+      auto-commit: true
+      idle-timeout: 600000
+      minimum-idle: 4
+      maximum-pool-size: 10
+      pool-name: HikariPool
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
   redis:
     host: 127.0.0.1
     port: 63799
+
+mybatis:
+  mapper-location: classpath:mapper/*/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
